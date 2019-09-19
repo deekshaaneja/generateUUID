@@ -10,7 +10,7 @@
 
 ###### Your task is to implement get_id.  
 ###### When a caller requests a new id, the node it connects to calls its internal get_id function to get a new, globally unique id.
-```
+
 
 
 # Solution
