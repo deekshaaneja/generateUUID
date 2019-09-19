@@ -1,13 +1,14 @@
-## Problem Statement 
+### Problem Statement 
 ```Imagine you are building a system to assign unique numbers to each resource that you manage. You want the ids to be guaranteed unique i.e. no UUIDs.  Since these ids are globally unique, each id can only be given out at most once. The ids are 64 bits long.
 
 Your service is composed of a set of nodes, each running one process serving ids.  A caller will connect to one of the nodes and ask it for a globally unique id.  There are a fixed number of nodes in the system, up to 1024.  Each node has a numeric id, 0 <= id <= 1023. Each node knows its id at startup and that id never changes for the node.
 
-Your task is to implement get_id.  When a caller requests a new id, the node it connects to calls its internal get_id function to get a new, globally unique id.     ```
+Your task is to implement get_id.  When a caller requests a new id, the node it connects to calls its internal get_id function to get a new, globally unique id.
+```
 
 
 
-#create a virual environment
+# Create a virual environment
 > virtualenv socialgraph
 > source socialgraph/bin/activate
 > pip install -r requirements.txt
